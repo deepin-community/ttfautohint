@@ -1,0 +1,149 @@
+ttfautohint (1.8.3-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Sat, 10 Aug 2019 18:23:41 +0200
+
+ttfautohint (1.8.3-1) experimental; urgency=medium
+
+  * New upstream version.
+  * debian/control: fix hiner typo.
+  * Add upstream signature.
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Mon, 15 Apr 2019 08:15:56 +0200
+
+ttfautohint (1.8.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Jeremy Bicha ]
+  * New upstream release
+    - Fixes "Please use 'pkg-config' to find FreeType 2" (Closes: #892444)
+  * Add debian/gbp.conf
+  * Bump debhelper compat to 11
+
+  [ Dmitry Shachnev ]
+  * Merge changes from 1.7-1, which were overridden by 1.8.1-1 upload.
+    Closes: #875211 (again).
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 01 Dec 2018 12:01:16 -0500
+
+ttfautohint (1.8.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/control:
+    + Mark package compliance with Debian policy 4.1.3.
+    + Use new salsa URL in Vcs-* fields.
+    + Create libttfautohint1 and libttfautohint-dev packages for library
+      and development headers.
+    + Add libttfautohint1 to section libs.
+  * debian/patches:
+    + Refresh fix-silent-compilation patch with new release.
+  * debian/watch:
+    + Use secure URL in watch.
+    + Use @ARCHIVE_EXT@ and @ANY_VERSION@ macros in watch file.
+
+ -- Vasudev Kamath <vasudev@copyninja.info>  Sun, 14 Jan 2018 21:17:21 +0530
+
+ttfautohint (1.7-1) unstable; urgency=medium
+
+  * New upstream version.
+  * debian/control: replace build-depends on qt4 with
+    qt5 dependencies. (Closes: #875211)
+  * Switch Maintainers and Uploaders.
+  * Bump standards version to 4.0.0.
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Fri, 22 Sep 2017 17:38:42 +0200
+
+ttfautohint (1.6-1) unstable; urgency=medium
+
+  [ Adam Borowski ]
+  * Fix a typo in Vcs-Git URL.
+
+  [ Gürkan Myczko ]
+  * Update my name in Uploaders.
+  * New upstream version. (Closes: #794743)
+  * Bump standards version to 3.9.8.
+
+  [ Axel Beckert ]
+  * debian/{control,copyright}: Update Homepage, Source and Format to use
+    https:// URLs. Issues reported by DUCK.
+  * Enable all hardening build flags.
+  * debian/copyright: Remove obsolete Files stanza for
+    doc/jquery-1.11.2.min.js which is excluded upon repacking.
+  * Bump debhelper compat level to 10.
+    + Update versioned debhelper build-dependency accordingly.
+    + Remove explicit dh-autoreconf build-dependency.
+    + Remove "--with autoreconf" from debian/rules.
+
+ -- Gürkan Myczko <gurkan@phys.ethz.ch>  Tue, 10 Jan 2017 02:18:54 +0100
+
+ttfautohint (1.5-1) unstable; urgency=medium
+
+  * Team upload.
+  * Imported Upstream version 1.5
+  * Add pkg-config and libharfbuzz-dev.
+  * Declare compliance with Debian policy 3.9.7.
+  * Add Vcs-* fields.
+  * Update copyright file using cme tool
+  * Add lintian override for exception text
+  * Update watch file to verify GPG signature on downloaded file.
+  * Use secure URL for Vcs-Git field.
+  * Drop jquery-1.11.2.min.js file and repack the original source.
+    + debian/watch: add repack option
+    + debian/copyright: Add Files-Excluded componet along with comment.
+
+ -- Vasudev Kamath <vasudev@copyninja.info>  Tue, 15 Mar 2016 20:29:54 +0530
+
+ttfautohint (0.97-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Gürkan Sengün <gurkan@phys.ethz.ch>  Thu, 21 Nov 2013 10:36:19 +0100
+
+ttfautohint (0.96-1) unstable; urgency=low
+
+  [ Gürkan Sengün ]
+  * New upstream version.
+  * Bump standards version to 3.9.4.
+  * Bump debhelper version to 9.
+  * Update debian/copyright years.
+
+  [ Axel Beckert ]
+  * Add Comment header to debian/copyright to fix lintian warning
+    unused-license-paragraph-in-dep5-copyright
+  * Add patch to fix blhc warning compiler-flags-hidden
+  * Use dh_autoreconf, add according build-dependency
+  * Remove redundant override for dh_auto_install
+
+ -- Gürkan Sengün <gurkan@phys.ethz.ch>  Mon, 23 Sep 2013 10:29:07 +0200
+
+ttfautohint (0.95-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Gürkan Sengün <gurkan@phys.ethz.ch>  Mon, 08 Apr 2013 11:44:11 +0200
+
+ttfautohint (0.94-1) unstable; urgency=low
+
+  [ Gürkan Sengün ]
+  * New upstream version.
+
+  [ Axel Beckert ]
+  * Update watch file. Thanks Bart Martens!
+
+ -- Gürkan Sengün <gurkan@phys.ethz.ch>  Wed, 09 Jan 2013 16:28:34 +0100
+
+ttfautohint (0.9-1) unstable; urgency=low
+
+  * New upstream version.
+  * Bump standards version to 3.9.3.
+
+ -- Gürkan Sengün <gurkan@phys.ethz.ch>  Sat, 16 Jun 2012 12:07:22 +0200
+
+ttfautohint (0.8-1) unstable; urgency=low
+
+  * Initial release. (Closes: #659233)
+
+ -- Gürkan Sengün <gurkan@phys.ethz.ch>  Wed, 08 Feb 2012 14:27:05 +0100

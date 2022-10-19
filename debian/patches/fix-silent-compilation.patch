@@ -1,0 +1,16 @@
+Description: Disable silent compilation
+ Fixes blhc warning compiler-flags-hidden.
+Author: Axel Beckert <abe@debian.org>
+Last-Updated: 2016-03-13
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -24,7 +24,7 @@
+ AC_CONFIG_MACRO_DIRS([gnulib/m4
+                       m4])
+ 
+-AM_SILENT_RULES([yes])
++AM_SILENT_RULES([no])
+ 
+ dnl Derive version triplet (major, minor, revision) from package version
+ dnl string.

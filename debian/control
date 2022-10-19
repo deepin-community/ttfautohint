@@ -1,0 +1,58 @@
+Source: ttfautohint
+Section: fonts
+Priority: optional
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Uploaders: Gürkan Myczko <gurkan@phys.ethz.ch>
+Build-Depends: debhelper (>= 11),
+ qt5-qmake, qtbase5-dev, qtchooser,
+ bison, flex,
+ libfreetype6-dev,
+ pkg-config,
+ libharfbuzz-dev,
+Standards-Version: 4.1.3
+Vcs-Git: https://salsa.debian.org/fonts-team/ttfautohint.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/ttfautohint
+Homepage: https://www.freetype.org/ttfautohint/
+
+Package: libttfautohint1
+Section: libs
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+ ${shlibs:Depends}
+Description: Automatic font hinter - library
+ This project provides a library which takes a TrueType font as the input,
+ removes its bytecode instructions (if any), and returns a new font where all
+ glyphs are bytecode hinted using the information given by FreeType's
+ autohinting module. The idea is to provide the excellent quality of the
+ autohinter on platforms which don't use FreeType.
+ .
+ This package provides a ttfautohint library.
+
+Package: libttfautohint-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends},
+ libttfautohint1 (= ${binary:Version})
+Description: Automatic font hinter - development files
+ This project provides a library which takes a TrueType font as the input,
+ removes its bytecode instructions (if any), and returns a new font where all
+ glyphs are bytecode hinted using the information given by FreeType's
+ autohinting module. The idea is to provide the excellent quality of the
+ autohinter on platforms which don't use FreeType.
+ .
+ This package provides ttfautohint library development files.
+
+Package: ttfautohint
+Architecture: any
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ libttfautohint1 (= ${binary:Version})
+Description: Automatic font hinter
+ This project provides a library which takes a TrueType font as the input,
+ removes its bytecode instructions (if any), and returns a new font where all
+ glyphs are bytecode hinted using the information given by FreeType's
+ autohinting module. The idea is to provide the excellent quality of the
+ autohinter on platforms which don't use FreeType.
+ .
+ This includes a cli and a gui version of the tool.

@@ -1,0 +1,457 @@
+% For non-ASCII characters, this template only works with luatex or XeTeX. 
+% Arabic, Armenian, Bengali, Cherokee, Devanagari, Ethiopic, Georgian,
+% Gujarati, Gurmukhi, Kannada, Khmer, Lao, Malayalam, Mongolian, Myanmar,
+% Sinhala, Tamil, Telugu, and Thai support currently works with XeTeX only.
+
+\documentclass[$if(fontsize)$$fontsize$,$endif$%
+               $if(lang)$$lang$,$endif$%
+               DIV=13]{scrreprt}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{libertine}
+
+\ifxetex
+  % with newer releases of `fontspec', fonts should be defined before
+  % including `ucharclasses'
+  \newfontfamily{\adlamfont}[Script=Adlam]{NotoSansAdlam-Regular.ttf}
+  \newfontfamily{\arabicfont}[Script=Arabic]{NotoSansArabic-Regular.ttf}
+  \newfontfamily{\armenianfont}[Script=Armenian]{NotoSansArmenian-Regular.ttf}
+  \newfontfamily{\avestanfont}[Script=Avestan]{NotoSansAvestan-Regular.ttf}
+  \newfontfamily{\bamumfont}[Script=Bamum]{NotoSansBamum-Regular.ttf}
+  \newfontfamily{\bengalifont}[Script=Bengali]{NotoSansBengali-Regular.ttf}
+  \newfontfamily{\buhidfont}[Script=Buhid]{NotoSansBuhid-Regular.ttf}
+  \newfontfamily{\canadianfont}[Script=Canadian Syllabics]{NotoSansCanadianAboriginal-Regular.ttf}
+  \newfontfamily{\carianfont}[Script=Carian]{NotoSansCarian-Regular.ttf}
+  \newfontfamily{\chakmafont}[Script=Chakma]{NotoSansChakma-Regular.ttf}
+  \newfontfamily{\cherokeefont}[Script=Cherokee]{NotoSansCherokee-Regular.ttf}
+  \newfontfamily{\copticfont}[Script=Coptic]{NotoSansCoptic-Regular.ttf}
+  \newfontfamily{\cypriotfont}[Script=Cypriot Syllabary]{NotoSansCypriot-Regular.ttf}
+  \newfontfamily{\cyrillicfont}[Script=Cyrillic]{NotoSans-Regular.ttf}
+  \newfontfamily{\devanagarifont}[Script=Devanagari]{NotoSansDevanagari-Regular.ttf}
+  \newfontfamily{\deseretfont}[Script=Deseret]{NotoSansDeseret-Regular.ttf}
+  \newfontfamily{\ethiopicfont}[Script=Ethiopic]{NotoSansEthiopic-Regular.ttf}
+  \newfontfamily{\georgianfont}[Script=Georgian]{NotoSansGeorgian-Regular.ttf}
+  \newfontfamily{\glagoliticfont}[Script=Glagolitic]{NotoSansGlagolitic-Regular.ttf}
+  \newfontfamily{\gothicfont}[Script=Gothic]{NotoSansGothic-Regular.ttf}
+  \newfontfamily{\greekfont}[Script=Greek]{NotoSans-Regular.ttf}
+  \newfontfamily{\gujaratifont}[Script=Gujarati]{NotoSansGujarati-Regular.ttf}
+  \newfontfamily{\gurmukhifont}[Script=Gurmukhi]{NotoSansGurmukhi-Regular.ttf}
+  \newfontfamily{\hebrewfont}[Script=Hebrew]{NotoSansHebrew-Regular.ttf}
+  \newfontfamily{\kannadafont}[Script=Kannada]{NotoSansKannada-Regular.ttf}
+  \newfontfamily{\kayahlifont}[Script=Kayah Li]{NotoSansKayahLi-Regular.ttf}
+  \newfontfamily{\khmerfont}[Script=Khmer]{NotoSansKhmer-Regular.ttf}
+  \newfontfamily{\laofont}[Script=Lao]{NotoSansLao-Regular.ttf}
+  \newfontfamily{\latinfont}[Script=Latin]{NotoSans-Regular.ttf}
+  \newfontfamily{\lisufont}[Script=Lisu]{NotoSansLisu-Regular.ttf}
+  \newfontfamily{\malayalamfont}[Script=Malayalam]{NotoSansMalayalam-Regular.ttf}
+  \newfontfamily{\mongolianfont}[Script=Mongolian]{NotoSansMongolian-Regular.ttf}
+  \newfontfamily{\myanmarfont}[Script=Myanmar]{NotoSansMyanmar-Regular.ttf}
+  \newfontfamily{\nkofont}[Script=N'Ko]{NotoSansNKo-Regular.ttf}
+  \newfontfamily{\olchikifont}[Script=Ol Chiki]{NotoSansOlChiki-Regular.ttf}
+  \newfontfamily{\oldturkicfont}[Script=Old Turkic]{NotoSansOldTurkic-Regular.ttf}
+  \newfontfamily{\osagefont}[Script=Osage]{NotoSansOsage-Regular.ttf}
+  \newfontfamily{\osmanyafont}[Script=Osmanya]{NotoSansOsmanya-Regular.ttf}
+  \newfontfamily{\saurashtrafont}[Script=Saurashtra]{NotoSansSaurashtra-Regular.ttf}
+  \newfontfamily{\shavianfont}[Script=Shavian]{NotoSansShavian-Regular.ttf}
+  \newfontfamily{\sinhalafont}[Script=Sinhala]{NotoSansSinhala-Regular.ttf}
+  \newfontfamily{\sundanesefont}[Script=Sundanese]{NotoSansSundanese-Regular.ttf}
+  \newfontfamily{\taivietfont}[Script=Tai Viet]{NotoSansTaiViet-Regular.ttf}
+  \newfontfamily{\tamilfont}[Script=Tamil]{NotoSansTamil-Regular.ttf}
+  \newfontfamily{\telugufont}[Script=Telugu]{NotoSansTelugu-Regular.ttf}
+  \newfontfamily{\thaifont}[Script=Thai]{NotoSansThai-Regular.ttf}
+  \newfontfamily{\tifinaghfont}[Script=Tifinagh]{NotoSansTifinagh-Regular.ttf}
+  \newfontfamily{\vaifont}[Script=Vai]{NotoSansVai-Regular.ttf}
+
+  \usepackage{ucharclasses}
+
+  \setTransitionTo{Adlam}{\begingroup\adlamfont}
+  \setTransitionFrom{Adlam}{\endgroup}
+  \setTransitionTo{Arabic}{\begingroup\arabicfont}
+  \setTransitionFrom{Arabic}{\endgroup}
+  \setTransitionTo{Armenian}{\begingroup\armenianfont}
+  \setTransitionFrom{Armenian}{\endgroup}
+  \setTransitionTo{Avestan}{\begingroup\avestanfont}
+  \setTransitionFrom{Avestan}{\endgroup}
+  \setTransitionTo{Bamum}{\begingroup\bamumfont}
+  \setTransitionFrom{Bamum}{\endgroup}
+  \setTransitionTo{Bengali}{\begingroup\bengalifont}
+  \setTransitionFrom{Bengali}{\endgroup}
+  \setTransitionTo{Buhid}{\begingroup\buhidfont}
+  \setTransitionFrom{Buhid}{\endgroup}
+  \setTransitionsForCanadianSyllabics{\begingroup\canadianfont}{\endgroup}
+  \setTransitionTo{Carian}{\begingroup\carianfont}
+  \setTransitionFrom{Carian}{\endgroup}
+  \setTransitionTo{Chakma}{\begingroup\chakmafont}
+  \setTransitionFrom{Chakma}{\endgroup}
+  \setTransitionsForCherokeeFull{\begingroup\cherokeefont}{\endgroup}
+  \setTransitionTo{Coptic}{\begingroup\copticfont}
+  \setTransitionFrom{Coptic}{\endgroup}
+  \setTransitionTo{CypriotSyllabary}{\begingroup\cypriotfont}
+  \setTransitionFrom{CypriotSyllabary}{\endgroup}
+  % no transition for Cyrillic font; we do that manually
+  \setTransitionTo{Deseret}{\begingroup\deseretfont}
+  \setTransitionFrom{Deseret}{\endgroup}
+  \setTransitionTo{Devanagari}{\begingroup\devanagarifont}
+  \setTransitionFrom{Devanagari}{\endgroup}
+  \setTransitionsForEthiopicFull{\begingroup\ethiopicfont}{\endgroup}
+  \setTransitionsForGeorgianFull{\begingroup\georgianfont}{\endgroup}
+  % in Noto, Glagolitic is not part of a Cyrillic font;
+  % we thus have to set up the ranges separately
+  \setTransitionTo{Glagolitic}{\begingroup\glagoliticfont}
+  \setTransitionFrom{Glagolitic}{\endgroup}
+  \setTransitionTo{GlagoliticSupplement}{\begingroup\glagoliticfont}
+  \setTransitionFrom{GlagoliticSupplement}{\endgroup}
+  \setTransitionTo{Gothic}{\begingroup\gothicfont}
+  \setTransitionFrom{Gothic}{\endgroup}
+  % no transition for Greek font; we do that manually
+  \setTransitionTo{Gujarati}{\begingroup\gujaratifont}
+  \setTransitionFrom{Gujarati}{\endgroup}
+  \setTransitionTo{Gurmukhi}{\begingroup\gurmukhifont}
+  \setTransitionFrom{Gurmukhi}{\endgroup}
+  \setTransitionTo{Hebrew}{\begingroup\hebrewfont}
+  \setTransitionFrom{Hebrew}{\endgroup}
+  \setTransitionTo{Kannada}{\begingroup\kannadafont}
+  \setTransitionFrom{Kannada}{\endgroup}
+  \setTransitionTo{KayahLi}{\begingroup\kayahlifont}
+  \setTransitionFrom{KayahLi}{\endgroup}
+  \setTransitionTo{Khmer}{\begingroup\khmerfont}
+  \setTransitionFrom{Khmer}{\endgroup}
+  \setTransitionTo{KhmerSymbols}{\begingroup\khmerfont}
+  \setTransitionFrom{KhmerSymbols}{\endgroup}
+  \setTransitionTo{Lao}{\begingroup\laofont}
+  \setTransitionFrom{Lao}{\endgroup}
+  % no transition for Latin font; we do that manually
+  \setTransitionTo{Lisu}{\begingroup\lisufont}
+  \setTransitionFrom{Lisu}{\endgroup}
+  \setTransitionTo{Malayalam}{\begingroup\malayalamfont}
+  \setTransitionFrom{Malayalam}{\endgroup}
+  % no transition for Mongolian font; we do that manually
+  \setTransitionsForMyanmarFull{\begingroup\myanmarfont}{\endgroup}
+  \setTransitionTo{NKo}{\begingroup\nkofont}
+  \setTransitionFrom{NKo}{\endgroup}
+  \setTransitionTo{OlChiki}{\begingroup\olchikifont}
+  \setTransitionFrom{OlChiki}{\endgroup}
+  \setTransitionTo{OldTurkic}{\begingroup\oldturkicfont}
+  \setTransitionFrom{OldTurkic}{\endgroup}
+  \setTransitionTo{Osage}{\begingroup\osagefont}
+  \setTransitionFrom{Osage}{\endgroup}
+  \setTransitionTo{Osmanya}{\begingroup\osmanyafont}
+  \setTransitionFrom{Osmanya}{\endgroup}
+  \setTransitionTo{Saurashtra}{\begingroup\saurashtrafont}
+  \setTransitionFrom{Saurashtra}{\endgroup}
+  \setTransitionTo{Shavian}{\begingroup\shavianfont}
+  \setTransitionFrom{Shavian}{\endgroup}
+  \setTransitionTo{Sinhala}{\begingroup\sinhalafont}
+  \setTransitionFrom{Sinhala}{\endgroup}
+  \setTransitionsForSundaneseFull{\begingroup\sundanesefont}{\endgroup}
+  \setTransitionTo{TaiViet}{\begingroup\taivietfont}
+  \setTransitionFrom{TaiViet}{\endgroup}
+  \setTransitionTo{Tamil}{\begingroup\tamilfont}
+  \setTransitionFrom{Tamil}{\endgroup}
+  \setTransitionTo{Telugu}{\begingroup\telugufont}
+  \setTransitionFrom{Telugu}{\endgroup}
+  \setTransitionTo{Thai}{\begingroup\thaifont}
+  \setTransitionFrom{Thai}{\endgroup}
+  \setTransitionTo{Tifinagh}{\begingroup\tifinaghfont}
+  \setTransitionFrom{Tifinagh}{\endgroup}
+  \setTransitionTo{Vai}{\begingroup\vaifont}
+  \setTransitionFrom{Vai}{\endgroup}
+
+  % the next commands are needed for manually switching fonts
+  \def\Cyrillic{\begingroup\cyrillicfont}
+  \def\cyrillic{\endgroup}
+  \def\Greek{\begingroup\greekfont}
+  \def\greek{\endgroup}
+  \def\Latin{\begingroup\latinfont}
+  \def\latin{\endgroup}
+  \def\Mongolian{\begingroup\mongolianfont}
+  \def\mongolian{\endgroup}
+\fi
+
+% Libertine Mono is too ugly; we use lmodern instead
+\renewcommand{\ttfamily}{\fontfamily{lmtt}\selectfont}
+
+\setkomafont{sectioning}{\normalfont\bfseries}
+\setkomafont{descriptionlabel}{\normalfont}
+\setkomafont{caption}{\normalfont\small}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+$endif$
+
+$if(fancy-enums)$
+% Redefine labelwidth for lists; otherwise, the enumerate package will cause
+% markers to extend beyond the left margin.
+\makeatletter
+
+\AtBeginDocument{%
+  \renewcommand{\@listi}
+    {\setlength{\labelwidth}{4em}}%
+}
+
+\makeatother
+
+\usepackage{enumerate}
+$endif$
+
+$if(tables)$
+% We use a patched version of longtable until a serious clash with
+% floats get fixed.
+\usepackage{longtable-patched}
+\usepackage{booktabs}
+
+% pandoc inserts \addlinespace after each line...
+\defaultaddspace=1pt
+
+% XXX The \addlinespace macro, as used in the LaTeX code generated by
+% pandoc, overrides any vertical space adjustments for \toprule and friends,
+% which is quite unfortunate.  I consider this a bug in pandoc 1.12.2.1.
+% It's not too difficult to fix this, but I had to redefine a lot of
+% booktabs commands, which I don't want.  Since the layout degradation is
+% minor, I simply wait until it gets fixed in pandoc.
+%
+%\aboverulesep=0.3em
+%\belowrulesep=0.3em
+$endif$
+
+$if(url)$
+\usepackage{url}
+$endif$
+
+$if(graphics)$
+\usepackage{graphicx}
+
+% We will generate all images so they have a width 0.6\maxwidth. This means
+% that they will get their normal width if they fit onto the page, but are
+% scaled down if they would overflow this limit.
+\makeatletter
+
+\def\maxwidth{%
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi}
+
+\makeatother
+
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[1]{%
+  \Oldincludegraphics[width=0.6\maxwidth]{#1}}
+$endif$
+
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex,
+              colorlinks=true,
+              linkcolor=blue]{hyperref}
+\else
+  \usepackage[unicode=true,
+              colorlinks=true,
+              linkcolor=blue]{hyperref}
+  \usepackage{microtype}
+  % don't apply protrusion to \texttt
+  \UseMicrotypeSet[protrusion]{basicmath}
+\fi
+\hypersetup{breaklinks=true,
+            pdfauthor={$author-meta$},
+            pdftitle={$title-meta$},
+            pdfborder={0 0 0}}
+
+% We want the names `section 2', `subsection 4.1', and the like in local
+% links, omitting the original link text.  To do that, we redefine
+% \hyperref.
+\makeatletter
+
+% We transform
+%
+%   \hyperref[foo]{bar}
+%
+% into
+%
+%   bar (\autoref{foo})
+
+\def\label@hyperref[#1]#2{%
+  #2 (\autoref{#1})}
+
+% pandoc >= 1.15.2 uses \hyperlink instead.
+
+\def\hyperlink#1#2{%
+  #2 (\autoref{#1})}
+
+
+\makeatother
+
+$if(subscript)$
+\newcommand{\textsubscr}[1]{%
+  \ensuremath{_{\scriptsize\textrm{#1}}}}
+$endif$
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{4em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}%
+  \setlength{\parskip}{0pt}}
+
+% avoid float pages as much as possible
+\renewcommand{\topfraction}{.99}
+\renewcommand{\bottomfraction}{.99}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\renewcommand{\textfraction}{.1}
+\renewcommand{\floatpagefraction}{.9}
+
+% We want a break after the description label (if there is one).
+\makeatletter
+
+\let\original@item\@item
+\def\description@item[#1]{%
+  \if@noparitem
+    \@donoparitem
+  \else
+    \if@inlabel
+      \indent \par
+    \fi
+    \ifhmode
+      \unskip\unskip \par
+    \fi
+    \if@newlist
+      \if@nobreak
+        \@nbitem
+      \else
+        \addpenalty\@beginparpenalty
+        \addvspace\@topsep
+        \addvspace{-\parskip}%
+      \fi
+    \else
+      \addpenalty\@itempenalty
+      \addvspace\itemsep
+    \fi
+    \global\@inlabeltrue
+  \fi
+  \everypar{%
+    \@minipagefalse
+    \global\@newlistfalse
+    \if@inlabel
+      \global\@inlabelfalse
+      {\setbox\z@\lastbox
+       \ifvoid\z@
+         \kern-\itemindent
+       \fi}%
+      \box\@labels
+      \penalty\z@
+    \fi
+    \if@nobreak
+      \@nobreakfalse
+      \clubpenalty \@M
+    \else
+      \clubpenalty \@clubpenalty
+      \everypar{}%
+    \fi}%
+  \if@noitemarg
+    \@noitemargfalse
+    \if@nmbrlist
+      \refstepcounter\@listctr
+    \fi
+  \fi
+  \sbox\@tempboxa{\makelabel{#1}}%
+  \global\setbox\@labels\hbox{%
+    \unhbox\@labels
+    \hskip \itemindent
+    \hskip -\labelwidth
+    \hskip -\labelsep
+    \ifdim \wd\@tempboxa >\labelwidth
+      \box\@tempboxa
+    \else
+      \hbox to\labelwidth {\unhbox\@tempboxa}%
+    \fi
+    \hskip \labelsep}%
+  \def\reserved@a{#1}%
+  \def\reserved@b{\@itemlabel}%
+  \ifx\reserved@a \reserved@b
+  \else
+    \leavevmode\\
+  \fi
+  \ignorespaces}
+
+\renewenvironment{description}{%
+  \list{}{\labelwidth\z@ \itemindent-\leftmargin
+    \let\makelabel\descriptionlabel
+    \let\@item\description@item}%
+}{%
+  \let\@item\original@item
+  \endlist
+}
+
+\makeatother
+
+% we want block quotes formatted as italic
+\renewenvironment{quote}{%
+  \list{}{\rightmargin\leftmargin}%
+  \item\relax
+  \em
+}{%
+  \endlist
+}
+
+
+
+$if(numbersections)$
+\setcounter{secnumdepth}{5}
+$else$
+\setcounter{secnumdepth}{0}
+$endif$
+
+$if(verbatim-in-note)$
+\VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+
+$if(lang)$
+\ifxetex
+  \usepackage{polyglossia}
+  \setmainlanguage{$mainlang$}
+\else
+  \usepackage[$lang$]{babel}
+\fi
+$endif$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$if(title)$
+\title{$title$}
+$endif$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$if(version)$
+\date{Version $version$}
+$endif$
+
+\begin{document}
+$if(title)$
+\maketitle
+$endif$
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+$if(toc)$
+\tableofcontents
+$endif$
+
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+\end{document}

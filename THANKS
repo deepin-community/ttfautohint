@@ -1,0 +1,49 @@
+The ttfautohint library has been written by Werner Lemberg <wl@gnu.org>.
+
+It is largely based on the FreeType autohinting module, written by David
+Turner <david@freetype.org>.
+
+
+Special thanks to Dave Crossland <dave@understandingfonts.com> for proposing
+the original idea, and to Raph Levien <https://raph.levien.com> and the
+Google Web Fonts team <https://fonts.google.com> for providing financial
+support to initiate the project.
+
+Thanks also to Extensis, FontLab, Google (again) and all the other people
+who contributed to the campaign at Pledgie
+<https://web.archive.org/web/20160331223853/https://pledgie.com/campaigns/15816>
+for continuing the financial support.
+
+
+The following people have provided help in developing and testing the
+library and front-ends:
+
+Dave Arnold <darnold@adobe.com>
+Vernon Adams
+Frederik Berlaen <frederik@typemytype.com>
+Frank E. Blokland <blokland@dutchtypelibrary.com>
+James Cloos <cloos@jhcloos.com>
+Girish Dalvi <girish.dalvi@gmail.com>
+Erwin Denissen <erwin.denissen@high-logic.com>
+Ralf S. Engelschall <rse@engelschall.com>
+Greg Hitchcock <gregh@microsoft.com>
+Hirwen Harendal <harendalh@gmail.com>
+Khaled Hosny <khaledhosny@eglug.org>
+Wei Huang <weiandhimself@gmail.com>
+Denis Jacquerye <moyogo@gmail.com>
+Daniel Johnson <il.basso.buffo@gmail.com>
+Christoph Koeberlin <christoph@koe.berlin>
+David Lemon <lemon@adobe.com>
+Karsten Lücke <karsten.luecke@kltf.de>
+Pablo Moleri <PMoleri@infragistics.com>
+Thomas Phinney <TPhinney@extensis.com>
+Thomas Rutter <trr@thomasrutter.com>
+Alexandre Saumier Demers <bonjour@asaumierdemers.com>
+Marc Schönefeld <marc.schoenefeld@gmx.org>
+Eben Sorkin <eben@eyebytes.com>
+Adam Twardoch <adam@fontlab.com>
+Jasper de Waard <contact@jasperdewaard.com>
+Zack Weinberg <zackw@panix.com>
+Benjamin Yang <benayang@gmail.com>
+
+EOF

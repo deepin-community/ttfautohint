@@ -1,0 +1,411 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ttfautohint
+Source: https://www.freetype.org/ttfautohint/
+Comment: Exclude jquery-1.11.2.min.js
+Files-Excluded:
+ doc/jquery-1.11.2.min.js
+
+Files: *
+Copyright: 2011-2017 Werner Lemberg <wl@gnu.org>
+License: FTL or GPL-2+
+
+Files: bootstrap
+Copyright: 1990-2016, Free Software Foundation, Inc
+License: GPL-3+
+Comment:
+ The following files are distributed with the source bundle of the
+ ttfautohint library to configure and build the library with GNU tools, but
+ which aren't part of it due to a different license (GPL only).
+ .
+  bootstrap
+  bootstrap.conf
+  m4/ltlize_lang.m4
+ .
+ All files of the following directories are distributed with the source
+ bundle of the ttfautohint library to configure and build the library with
+ GNU tools, but which aren't part of it due to a different license (GPL
+ only).
+ .
+  gnulib
+
+Files: configure
+Copyright: 1992-1996, 1998-2012, Free Software Foundation, Inc
+License-Grant:
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+License: GAP
+
+Files: debian/*
+Copyright: 2012  Gürkan Sengün <gurkan@phys.ethz.ch>
+ 2015, Vasudev Kamath <vasudev@copyninja.info>
+License: GPL-2+
+
+Files: doc/make-snapshot.sh
+Copyright: 2011-2016, Werner Lemberg
+License: FTL or GPL-2+
+
+Files: frontend/*
+Copyright: 2011-2016, Werner Lemberg
+License: FTL or GPL-2+
+
+Files: gnulib/*
+Copyright: 1996-2015, Free Software Foundation, Inc
+License: GPL-2+
+
+Files: gnulib/git-version-gen
+Copyright: 1990-2016, Free Software Foundation, Inc
+License: GPL-3+
+
+Files: gnulib/install-sh
+Copyright: and license / 1994, X Consortium
+License: Expat
+
+Files: gnulib/src/*
+Copyright: 1990-2016, Free Software Foundation, Inc
+License: GPL-3+
+
+Files: gnulib/src/alloca.in.h
+  gnulib/src/asprintf.c
+  gnulib/src/dirname.h
+  gnulib/src/error.h
+  gnulib/src/stripslash.c
+Copyright: 1990, 1995-1999, 2001-2016, Free Software Foundation
+License: GPL-3+
+
+Files: gnulib/src/basename-lgpl.c
+  gnulib/src/basename.c
+  gnulib/src/dirname-lgpl.c
+  gnulib/src/dirname.c
+  gnulib/src/getopt.c
+  gnulib/src/getopt.in.h
+  gnulib/src/getopt1.c
+  gnulib/src/getopt_int.h
+  gnulib/src/gettext.h
+  gnulib/src/memmem.c
+  gnulib/src/printf-args.c
+  gnulib/src/printf-args.h
+  gnulib/src/printf-parse.h
+  gnulib/src/strndup.c
+  gnulib/src/strtok_r.c
+  gnulib/src/xalloc-die.c
+Copyright: 1987-2016, Free Software
+License: GPL-3+
+
+Files: gnulib/src/memchr.c
+Copyright: 1991, 1993, 1996, 1997, 1999, 2000, 2003, 2004, 2006, 2008-2016, Free Software Foundation, Inc.
+License: GPL-3+
+
+Files: lib/*
+Copyright: 2011-2016, Werner Lemberg
+License: FTL or GPL-2+
+
+Files: lib/afblue.pl
+Copyright: 2013-2016, David Turner, Robert Wilhelm, and Werner Lemberg.
+License: FTL
+
+Files: lib/llrb.h
+Copyright: 2011, 2013, William Ahern <william@25thandClement.com>
+License: Expat
+
+Files: lib/sds.c
+  lib/sds.h
+Copyright: 2006-2014, Salvatore Sanfilippo <antirez at gmail dot com>
+License: BSD-3-clause
+
+Files: lib/tacontrol-bison.h
+ lib/tacontrol-bison.c
+Copyright: 1990-2016, Free Software Foundation, Inc
+License-Grant:
+  This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ As a special exception, you may create a larger work that contains
+ part or all of the Bison parser skeleton and distribute that work
+ under terms of your choice, so long as that work isn't itself a
+ parser generator using the skeleton or a modified version thereof as
+ a parser skeleton.  Alternatively, if you modify or redistribute the
+ parser skeleton itself, you may (at your option) remove this special
+ exception, which will cause the skeleton and the resulting Bison
+ output files to be licensed under the GNU General Public License
+ without this special exception.
+ .
+ This special exception was added by the Free Software Foundation in
+ version 2.2 of Bison
+License: GPL-2+ with Bison exception
+
+Files: lib/tacontrol-flex.c
+  lib/tacontrol-flex.h
+Copyright: 2011 - 2015 Werner Lemberg <wl@gnu.org>
+License: FTL or GPL-2+
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+   * Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the
+     distribution.
+   * Neither the name of Redis nor the names of its contributors may
+     be used to endorse or promote products derived from this software
+     without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so, subject to
+ the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+License: FTL
+                    The FreeType Project LICENSE
+                    ----------------------------
+ .
+                            2006-Jan-27
+ .
+                    Copyright 1996-2002, 2006 by
+          David Turner, Robert Wilhelm, and Werner Lemberg
+ .
+ Introduction
+ ============
+ .
+  The FreeType  Project is distributed in  several archive packages;
+  some of them may contain, in addition to the FreeType font engine,
+  various tools and  contributions which rely on, or  relate to, the
+  FreeType Project.
+ .
+  This  license applies  to all  files found  in such  packages, and
+  which do not  fall under their own explicit  license.  The license
+  affects  thus  the  FreeType   font  engine,  the  test  programs,
+  documentation and makefiles, at the very least.
+ .
+  This  license   was  inspired  by  the  BSD,   Artistic,  and  IJG
+  (Independent JPEG  Group) licenses, which  all encourage inclusion
+  and  use of  free  software in  commercial  and freeware  products
+  alike.  As a consequence, its main points are that:
+ .
+    o We don't promise that this software works. However, we will be
+      interested in any kind of bug reports. (`as is' distribution)
+ .
+    o You can  use this software for whatever you  want, in parts or
+      full form, without having to pay us. (`royalty-free' usage)
+ .
+    o You may not pretend that  you wrote this software.  If you use
+      it, or  only parts of it,  in a program,  you must acknowledge
+      somewhere  in  your  documentation  that  you  have  used  the
+      FreeType code. (`credits')
+ .
+  We  specifically  permit  and  encourage  the  inclusion  of  this
+  software, with  or without modifications,  in commercial products.
+  We  disclaim  all warranties  covering  The  FreeType Project  and
+  assume no liability related to The FreeType Project.
+ .
+ .
+  Finally,  many  people  asked  us  for  a  preferred  form  for  a
+  credit/disclaimer to use in compliance with this license.  We thus
+  encourage you to use the following text:
+ .
+   """
+    Portions of this software are copyright (C) <year> The FreeType
+    Project (www.freetype.org).  All rights reserved.
+   """
+ .
+  Please replace <year> with the value from the FreeType version you
+  actually use.
+ .
+ .
+ Legal Terms
+ ===========
+ .
+ 0. Definitions
+ --------------
+ .
+  Throughout this license,  the terms `package', `FreeType Project',
+  and  `FreeType  archive' refer  to  the  set  of files  originally
+  distributed  by the  authors  (David Turner,  Robert Wilhelm,  and
+  Werner Lemberg) as the `FreeType Project', be they named as alpha,
+  beta or final release.
+ .
+  `You' refers to  the licensee, or person using  the project, where
+  `using' is a generic term including compiling the project's source
+  code as  well as linking it  to form a  `program' or `executable'.
+  This  program is  referred to  as  `a program  using the  FreeType
+  engine'.
+ .
+  This  license applies  to all  files distributed  in  the original
+  FreeType  Project,   including  all  source   code,  binaries  and
+  documentation,  unless  otherwise  stated   in  the  file  in  its
+  original, unmodified form as  distributed in the original archive.
+  If you are  unsure whether or not a particular  file is covered by
+  this license, you must contact us to verify this.
+ .
+  The FreeType  Project is copyright (C) 1996-2000  by David Turner,
+  Robert Wilhelm, and Werner Lemberg.  All rights reserved except as
+  specified below.
+ .
+ 1. No Warranty
+ --------------
+ .
+  THE FREETYPE PROJECT  IS PROVIDED `AS IS' WITHOUT  WARRANTY OF ANY
+  KIND, EITHER  EXPRESS OR IMPLIED,  INCLUDING, BUT NOT  LIMITED TO,
+  WARRANTIES  OF  MERCHANTABILITY   AND  FITNESS  FOR  A  PARTICULAR
+  PURPOSE.  IN NO EVENT WILL ANY OF THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE  FOR ANY DAMAGES CAUSED  BY THE USE OR  THE INABILITY TO
+  USE, OF THE FREETYPE PROJECT.
+ .
+ 2. Redistribution
+ -----------------
+ .
+  This  license  grants  a  worldwide, royalty-free,  perpetual  and
+  irrevocable right  and license to use,  execute, perform, compile,
+  display,  copy,   create  derivative  works   of,  distribute  and
+  sublicense the  FreeType Project (in  both source and  object code
+  forms)  and  derivative works  thereof  for  any  purpose; and  to
+  authorize others  to exercise  some or all  of the  rights granted
+  herein, subject to the following conditions:
+ .
+    o Redistribution of  source code  must retain this  license file
+      (`FTL.TXT') unaltered; any  additions, deletions or changes to
+      the original  files must be clearly  indicated in accompanying
+      documentation.   The  copyright   notices  of  the  unaltered,
+      original  files must  be  preserved in  all  copies of  source
+      files.
+ .
+    o Redistribution in binary form must provide a  disclaimer  that
+      states  that  the software is based in part of the work of the
+      FreeType Team,  in  the  distribution  documentation.  We also
+      encourage you to put an URL to the FreeType web page  in  your
+      documentation, though this isn't mandatory.
+ .
+  These conditions  apply to any  software derived from or  based on
+  the FreeType Project,  not just the unmodified files.   If you use
+  our work, you  must acknowledge us.  However, no  fee need be paid
+  to us.
+ .
+ 3. Advertising
+ --------------
+ .
+  Neither the  FreeType authors and  contributors nor you  shall use
+  the name of the  other for commercial, advertising, or promotional
+  purposes without specific prior written permission.
+ .
+  We suggest,  but do not require, that  you use one or  more of the
+  following phrases to refer  to this software in your documentation
+  or advertising  materials: `FreeType Project',  `FreeType Engine',
+  `FreeType library', or `FreeType Distribution'.
+ .
+  As  you have  not signed  this license,  you are  not  required to
+  accept  it.   However,  as  the FreeType  Project  is  copyrighted
+  material, only  this license, or  another one contracted  with the
+  authors, grants you  the right to use, distribute,  and modify it.
+  Therefore,  by  using,  distributing,  or modifying  the  FreeType
+  Project, you indicate that you understand and accept all the terms
+  of this license.
+ .
+ 4. Contacts
+ -----------
+ .
+  There are two mailing lists related to FreeType:
+ .
+    o freetype@nongnu.org
+ .
+      Discusses general use and applications of FreeType, as well as
+      future and  wanted additions to the  library and distribution.
+      If  you are looking  for support,  start in  this list  if you
+      haven't found anything to help you in the documentation.
+ .
+    o freetype-devel@nongnu.org
+ .
+      Discusses bugs,  as well  as engine internals,  design issues,
+      specific licenses, porting, etc.
+ .
+  Our home page can be found at
+ .
+    https://www.freetype.org/
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 3 dated June, 2007, or (at
+ your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of version 3 of the GNU General
+ Public License can be found in '/usr/share/common-licenses/GPL-3'.
+
+License: GPL-2+ with Bison exception
+License-Reference: /usr/share/common-licenses/GPL-2
+License-Exception:
+ As a special exception, you may create a larger work that contains
+ part or all of the Bison parser skeleton and distribute that work
+ under terms of your choice, so long as that work isn't itself a
+ parser generator using the skeleton or a modified version thereof as
+ a parser skeleton.  Alternatively, if you modify or redistribute the
+ parser skeleton itself, you may (at your option) remove this special
+ exception, which will cause the skeleton and the resulting Bison
+ output files to be licensed under the GNU General Public License
+ without this special exception.
+ .
+ This special exception was added by the Free Software Foundation in
+ version 2.2 of Bison
+
+License: GAP
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
